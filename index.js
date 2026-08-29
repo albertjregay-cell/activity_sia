@@ -1,0 +1,39 @@
+const express = require('express');
+const server = express()
+const PORT = 3000;
+const HOSTNAME = "0.0.0.0";
+
+server.listen(PORT, HOSTNAME, () => {
+  console.log(`server is running IN ${HOSTNAME}: ${PORT}`);
+})
+
+let data = [
+  {
+    id:1,
+    name: 'Dog',
+  },
+
+  {
+    id:2,
+    name: 'cat',
+  },
+
+  {
+    id:3,
+    name: 'fish',
+  },
+
+  {
+    id:4,
+    name: 'mamal',
+  }
+
+]
+
+server.get(`/api/data`, (req, res) => {
+    return res.json(data)({
+      ... data,
+    category: 1,
+    })
+    
+})
