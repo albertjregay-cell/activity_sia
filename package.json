@@ -1,0 +1,25 @@
+{
+  "name": "sia",
+  "version": "1.0.0",
+  "description": "activity",
+  "keywords": [
+    "activity"
+  ],
+  "homepage": "https://github.com/albertjregay-cell/activity_sia#readme",
+  "bugs": {
+    "url": "https://github.com/albertjregay-cell/activity_sia/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/albertjregay-cell/activity_sia.git"
+  },
+  "author": "Albert Egay S.",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "test.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
